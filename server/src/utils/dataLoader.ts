@@ -2,17 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { pr_ICR17 } from '../data/pr_ICR17';
 
-/**
- * Dynamic Data Loader - Aggregates performance data from multiple files
- * 
- * This utility enables the system to handle data scalability by:
- * 1. Discovering all pr_ICR17_*.ts data files in the data directory
- * 2. Dynamically loading and merging them
- * 3. Returning a unified performance dataset with dates from all files
- * 
- * This architecture allows adding new data (e.g., pr_ICR17_2025.ts) without
- * modifying any backend code. The system automatically discovers and merges it.
- */
+
 
 export interface MergedPerformanceData {
   pr_data: {
